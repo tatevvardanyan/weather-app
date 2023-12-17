@@ -6,12 +6,12 @@ import { getFirestore } from 'firebase/firestore'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyBQMvessKyox0hJvEx3DbcQfwufvpcRf4s",
-    authDomain: "weather-app-75725.firebaseapp.com",
-    projectId: "weather-app-75725",
-    storageBucket: "weather-app-75725.appspot.com",
-    messagingSenderId: "405978440815",
-    appId: "1:405978440815:web:42f201a8f6e0a7da77599a"
+    apiKey: "AIzaSyC1K6oo1jA0bXbc6IE8BKZgM5WLOsC4-Ds",
+    authDomain: "weather-app-99294.firebaseapp.com",
+    projectId: "weather-app-99294",
+    storageBucket: "weather-app-99294.appspot.com",
+    messagingSenderId: "678218024277",
+    appId: "1:678218024277:web:8c9b3b9800f1646be99bdc"
 };
 
 // Initialize Firebase

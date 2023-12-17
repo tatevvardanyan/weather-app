@@ -1,0 +1,40 @@
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.first_1 {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.first_2 {
+    width: 170px;
+    padding: 10px;
+    border: transparent;
+    background: linear-gradient(360deg, rgba(255, 255, 255, 0.445) 20%, rgba(2, 0, 36, 0.267) 50%);
+    outline: 0.5px solid transparent;
+}
+.first_2 p{
+    color: whitesmoke;
+    text-align: start;
+}
+.first_2 h3{
+    color: whitesmoke;
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: whitesmoke;
+}
+span{
+    color: whitesmoke,
+}
