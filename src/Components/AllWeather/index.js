@@ -43,8 +43,8 @@ const AllWeather = () => {
     async function dropHandler(e, card) {
         e.preventDefault()
         const id = card.id
-        const id1 = obj.find(elm => elm.id == card.id)
-        const id2 = obj.find(elm => elm.id == currentCard.id)
+        const id1 = obj.find(elm => elm.id === card.id)
+        const id2 = obj.find(elm => elm.id === currentCard.id)
         const curentid = id2.id
         let docRef = doc(db, 'weather', id)
         await updateDoc(docRef, id2)

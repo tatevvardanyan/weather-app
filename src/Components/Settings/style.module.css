@@ -1,12 +1,13 @@
-.box{
+.box {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    gap:10px
+    gap: 10px
 }
-.box h2{
+
+.box h2 {
     font-size: 30px;
     color: whitesmoke;
 }

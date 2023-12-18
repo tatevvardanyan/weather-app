@@ -27,10 +27,10 @@ const SearchWeather = () => {
 
     const search = async (data) => {
         const arr = find.filter((elm) => elm.name == data.name)
-        if (arr.length == 0) {
+        if (arr.length === 0) {
             await axios.get(`${GET_WEATHER_API}q=${data.name}`).then(async (response) => {
                 await addDoc(weatherList, response.data)
-            }).catch((err)=>{
+            }).catch((err) => {
                 navigate("/settings")
             })
             navigate("/")
@@ -42,14 +42,16 @@ const SearchWeather = () => {
     return <>
         <form onSubmit={handleSubmit(search)} className={style.inp}>
             {errors.name && <p style={{ color: "whitesmoke" }}>name is required...</p>}
-            <input {...register("name", { required: true })} type="text" placeholder='Enter Location' />
-            <button>
-                <span className="material-symbols-outlined" style={{ fontSize: '25px', color: 'whitesmoke' }}>
-                    <link rel="stylesheet"
-                        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-                    search
-                </span>
-            </button>
+            <div>
+                <input {...register("name", { required: true })} type="text" placeholder='Enter Location' />
+                <button>
+                    <span className="material-symbols-outlined" style={{ fontSize: '25px', color: 'whitesmoke' }}>
+                        <link rel="stylesheet"
+                            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+                        search
+                    </span>
+                </button>
+            </div>
         </form>
     </>
 }

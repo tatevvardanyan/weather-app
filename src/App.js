@@ -9,7 +9,7 @@ function App() {
   const month=currentDate.getMonth()+1
   const day=currentDate.getDate()
   return <div className="big">
-    <h1 style={{color:"whitesmoke"}}>{year} - {month} - {day}</h1>
+    <h1 style={{color:"whitesmoke"}} className="time">{year} - {month} - {day}</h1>
     <BrowserRouter>
       <Routes>
         <Route path="" element={<Index />} />

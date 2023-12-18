@@ -1,18 +1,31 @@
-.inp{
+.inp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     padding: 1rem;
 }
-.inp input{
+
+.inp div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.inp input {
     padding: .7rem 1.5rem;
     font-size: .9rem;
     border-radius: 25px;
-    border:1px solid rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.8);
     background-color: rgba(255, 255, 255, 0.1);
 }
-::placeholder{
+
+::placeholder {
     color: whitesmoke;
 }
-.inp button{
+
+.inp button {
     background-color: transparent;
     border: none;
 }
