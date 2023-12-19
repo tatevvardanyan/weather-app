@@ -18,7 +18,7 @@ const AllWeather = () => {
 
     useEffect(() => {
         getWeather()
-    }, [])
+    })
 
     const deleteObj = async (id) => {
         let item = doc(db, "weather", id)
